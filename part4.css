@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.content span {
+    padding: 25px 45px;
+    border-radius: 12px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.big {
+    display: inline-block;
+    background-color: green;
+}
+
+.small {
+    display: none;
+    background-color: greenyellow;
+}
+
+@media only screen and (max-width: 350px) {
+    .big {
+        display: none;
+    }
+    .small {
+        display: inline-block;
+    }
+}
